@@ -1,0 +1,101 @@
+﻿<link rel="stylesheet" href="~/css/style.css" />
+
+@model List<RewardsPOC.Models.ApplicationUser>
+
+@{
+    List<ApplicationUser> users = new List<ApplicationUser>();
+    if (Model != null)
+    {
+        users = Model;
+    }
+}
+@{
+    ViewData["Title"] = "Reportees";
+}
+<div class="container">
+    <div class="heading_container heading_center">
+        <h2>
+            My Reportees
+        </h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="empChart">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container mt-3">
+                <h2>Points Table</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Email</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in users)
+                        {
+                            <tr>
+                                <td>@user.FirstName</td>
+                                <td>@user.Email</td>
+                                <td>@user.RewardPoints</td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+
+      $(document).ready(function(){
+    google.load("visualization", "1", {packages:["OrgChart"]});
+       google.setOnLoadCallback(drawEmpChart);
+
+      });
+
+     function drawEmpChart() {
+
+           $.ajax({
+               type: "POST",
+               url: "Employee/GetEmpChartData",
+               data: '{}',
+               contentType: "application/json; charset=utf-8",
+               dataType: "json",
+               success: function (empData) {
+
+                   var chartData = new google.visualization.DataTable();
+
+                   chartData.addColumn('string', 'Name');
+                   chartData.addColumn('string', 'Manager');
+                   chartData.addColumn('string', 'ToolTip');
+                   console.table(empData);
+                   $.each(empData, function (index, row) {
+                       var managerId = row.managerId.toString() == "0" ? '' : row.managerId.toString();
+                       let url = "https://picsum.photos/" + row.id.toString()
+                       chartData.addRows([[{
+                           v: row.id.toString(),
+                           f: row.firstName + '<div>(<span>Employee</span>)</div><img height="50px" width="50px" src="'+url+'" />'
+                       }, managerId, "Employee"]]);
+
+                   });
+
+                   var chart = new google.visualization.OrgChart($("#empChart")[0]);
+                   chart.draw(chartData, { allowHtml: true });
+               },
+               failure: function (xhr, status, error) {
+                   alert("Failure: " + xhr.responseText);
+               },
+               error: function (xhr, status, error) {
+                   alert("Error: " + xhr.responseText);
+               }
+           });
+       }
+</script>  

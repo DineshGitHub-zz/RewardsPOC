@@ -1,0 +1,232 @@
+[
+  {
+    "FirstName": "Potter",
+    "LastName": "Goodwin",
+    "Email": "pottergoodwin@imkan.com",
+    "UserName": "Hewitt",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 1,
+    "RewardPoints":  250
+  },
+  {
+    "FirstName": "Yvette",
+    "LastName": "Skinner",
+    "Email": "yvetteskinner@imkan.com",
+    "UserName": "Sonia",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 2,
+    "RewardPoints": 25
+  },
+  {
+    "FirstName": "Terrie",
+    "LastName": "Mckinney",
+    "Email": "terriemckinney@imkan.com",
+    "UserName": "Haley",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 2,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Mcclure",
+    "LastName": "Dominguez",
+    "Email": "mccluredominguez@imkan.com",
+    "UserName": "Tyson",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 3,
+    "RewardPoints": 400
+  },
+  {
+    "FirstName": "Willa",
+    "LastName": "Sweeney",
+    "Email": "willasweeney@imkan.com",
+    "UserName": "Barrett",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 3,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Hess",
+    "LastName": "Bell",
+    "Email": "hessbell@imkan.com",
+    "UserName": "Garrison",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 3,
+    "RewardPoints": 100
+  },
+  {
+    "FirstName": "Foley",
+    "LastName": "Cantrell",
+    "Email": "foleycantrell@imkan.com",
+    "UserName": "Wilson",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 3,
+    "RewardPoints": 600
+  },
+  {
+    "FirstName": "Viola",
+    "LastName": "Mooney",
+    "Email": "violamooney@imkan.com",
+    "UserName": "Nelda",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 2,
+    "RewardPoints": 300
+  },
+  {
+    "FirstName": "Freeman",
+    "LastName": "Preston",
+    "Email": "freemanpreston@imkan.com",
+    "UserName": "Dollie",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 4,
+    "RewardPoints": 23
+  },
+  {
+    "FirstName": "Rebekah",
+    "LastName": "Ryan",
+    "Email": "rebekahryan@imkan.com",
+    "UserName": "Mcbride",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 2,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Juarez",
+    "LastName": "Rasmussen",
+    "Email": "juarezrasmussen@imkan.com",
+    "UserName": "Barbra",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 2,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Hart",
+    "LastName": "Browning",
+    "Email": "hartbrowning@imkan.com",
+    "UserName": "Olivia",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 4,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Alisha",
+    "LastName": "Carson",
+    "Email": "alishacarson@imkan.com",
+    "UserName": "Melissa",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 20
+  },
+  {
+    "FirstName": "Tanisha",
+    "LastName": "Santana",
+    "Email": "tanishasantana@imkan.com",
+    "UserName": "Laurel",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 54
+  },
+  {
+    "FirstName": "Bertha",
+    "LastName": "Gibson",
+    "Email": "berthagibson@imkan.com",
+    "UserName": "Sawyer",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Dalton",
+    "LastName": "Blake",
+    "Email": "daltonblake@imkan.com",
+    "UserName": "Vincent",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Rosie",
+    "LastName": "Hayden",
+    "Email": "rosiehayden@imkan.com",
+    "UserName": "Mills",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Hensley",
+    "LastName": "Ellis",
+    "Email": "hensleyellis@imkan.com",
+    "UserName": "Twila",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Kristine",
+    "LastName": "Santiago",
+    "Email": "kristinesantiago@imkan.com",
+    "UserName": "Mccarthy",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 8,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Blevins",
+    "LastName": "Charles",
+    "Email": "blevinscharles@imkan.com",
+    "UserName": "Maggie",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 9,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Lauri",
+    "LastName": "Page",
+    "Email": "lauripage@imkan.com",
+    "UserName": "Parrish",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 9,
+    "RewardPoints": 250
+  },
+  {
+    "FirstName": "Alba",
+    "LastName": "Russo",
+    "Email": "albarusso@imkan.com",
+    "UserName": "Scott",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 9,
+    "RewardPoints": 500
+  },
+  {
+    "FirstName": "Cecelia",
+    "LastName": "Malone",
+    "Email": "ceceliamalone@imkan.com",
+    "UserName": "Willis",
+    "EmailConfirmed": true,
+    "PhoneNumberConfirmed": true,
+    "ManagerId": 9,
+    "RewardPoints": 25
+  }
+]
