@@ -31,6 +31,7 @@ namespace RewardsPOC
                     await context.Database.MigrateAsync();
                     await ContextSeed.SeedRolesAsync(userManager, roleManager);
                     await ContextSeed.SeedSuperAdminAsync(userManager, roleManager);
+                    await ContextSeed.SeedRewards(context);
                     //await ContextSeed.SeedPointsAsync(context);
                 }
                 catch (Exception ex)

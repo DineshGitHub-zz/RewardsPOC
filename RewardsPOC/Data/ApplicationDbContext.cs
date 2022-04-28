@@ -52,5 +52,7 @@ namespace RewardsPOC.Data
         }
 
         public DbSet<RewardTypes> RewardTypes { get; set; }
+
+        public DbSet<Rewards> Rewards { get; set; }
     }
 }

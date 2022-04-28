@@ -51,7 +51,25 @@ namespace RewardsPOC.Data
                 Name = "Inspiring"
             };
             await dbContext.RewardTypes.AddAsync(Inspiring);
+            await dbContext.SaveChangesAsync();
+        }
 
+        public static async Task SeedRewards(ApplicationDbContext dbContext)
+        {
+            var Rewards = await dbContext.Rewards.ToListAsync();
+
+            if(Rewards.Any())
+                return ;
+
+            var rewardsData = await System.IO.File.ReadAllTextAsync("Data/Rewards.json");
+
+            var rewards = JsonSerializer.Deserialize<List<Rewards>>(rewardsData).ToList();
+
+            foreach (var reward in rewards)
+            {
+                await dbContext.Rewards.AddAsync(reward);
+            }
+            await dbContext.SaveChangesAsync();
         }
 
         public static async Task SeedSuperAdminAsync(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)

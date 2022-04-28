@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Ring",
+    "Points": 500,
+    "filePath": "images/p1.png"
+  },
+  {
+    "Name": "Watch",
+    "Points": 480,
+    "filePath": "images/p2.png"
+  },
+  {
+    "Name": "Teddy Bear",
+    "Points": 220,
+    "filePath": "images/p3.png"
+  },
+  {
+    "Name": "Flower Bouquet",
+    "Points": 200,
+    "filePath": "images/p4.png"
+  },
+  {
+    "Name": "Teddy Bear",
+    "Points": 160,
+    "filePath": "images/p5.png"
+  },
+  {
+    "Name": "Flower Bouquet",
+    "Points": 300,
+    "filePath": "images/p6.png"
+  },
+  {
+    "Name": "Watch",
+    "Points": 350,
+    "filePath": "images/p7.png"
+  },
+  {
+    "Name": "Ring",
+    "Points": 120,
+    "filePath": "images/p8.png"
+  }
+]

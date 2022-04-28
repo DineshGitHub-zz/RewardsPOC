@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RewardsPOC.Data;
 using RewardsPOC.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +13,23 @@ namespace RewardsPOC.Controllers
     public class RewardController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ApplicationDbContext _dbContext;
 
-        public RewardController(UserManager<ApplicationUser> userManager)
+        public RewardController(UserManager<ApplicationUser> userManager, ApplicationDbContext dbContext)
         {
             _userManager = userManager;
+            _dbContext = dbContext;
         }
 
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            RewardsViewModel model = new RewardsViewModel();
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var user = await _userManager.FindByIdAsync(userId);
+            model.RewardPoints = user.RewardPoints;
+            var rewards = _dbContext.Rewards.ToList();
+            model.Rewards = rewards;
+            return View(model);
         }
         public async Task<ActionResult> AddRewardPoints()
         {
